@@ -9,7 +9,7 @@ describe("Shorten Customize", () => {
         let longUrl = 'https://www.youtube.com/watch?v=azAEHCQgcUI';
         let name = Math.floor(Date.now()).toString();
         let shortUrl = 'http:\/\/polr\.alwaysdata\.net\/' + name;
-
+//      load page polr.alwaysdata.net
         await page.goto('http://polr.alwaysdata.net');
         await page.waitForSelector('.long-link-input');
         await page.type('.long-link-input', longUrl);
